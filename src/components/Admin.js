@@ -3,8 +3,8 @@ import SurveySummaryList from './SurveySummaryList';
 import ActiveSurveyContainer from './ActiveSurveyContainer';
 import ConfirmModal from './ConfirmModal';
 import { withAuth0 } from '@auth0/auth0-react';
-import LoginButton from './LoginButton';
-import Row from 'react-bootstrap/Row';
+// import LoginButton from './LoginButton';
+// import Row from 'react-bootstrap/Row';
 
 
 class Admin extends Component {
@@ -24,24 +24,34 @@ class Admin extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.auth0.isAuthenticated);
         this.props.getActiveSurvey();
-    }
+      }
+
     render() {
-        console.log("we are looking at Admin.js", this.props.auth0.isAuthenticated);
+        // console.log("we are looking at Admin.js", this.props.auth0.isAuthenticated);
         return (
             <div>
             <ConfirmModal showModal={this.state.showModal} closeModal={this.closeModal} putActiveSurvey={this.props.putActiveSurvey} />
                 {this.props.auth0.isAuthenticated ?
                     <>
                         
-                        <ActiveSurveyContainer activeSurvey={this.props.activeSurvey} createNewSurvey={this.props.createNewSurvey} graphResults={this.props.graphResults} openModal={this.openModal} getActiveSurvey={this.props.getActiveSurvey} />
-                        <SurveySummaryList getSavedSurvey={this.props.getSavedSurvey} graphResults={this.props.graphResults} surveyData={this.props.surveyData} deleteSavedSurvey={this.props.deleteSavedSurvey} />
+                        <ActiveSurveyContainer 
+                        activeSurvey={this.props.activeSurvey} 
+                        createNewSurvey={this.props.createNewSurvey} 
+                        graphResults={this.props.graphResults} 
+                        openModal={this.openModal} 
+                        getActiveSurvey={this.props.getActiveSurvey} 
+                        />
+                        <SurveySummaryList 
+                        getSavedSurvey={this.props.getSavedSurvey} 
+                        graphResults={this.props.graphResults} 
+                        surveyData={this.props.surveyData} 
+                        deleteSavedSurvey={this.props.deleteSavedSurvey} />
                     </>
                     : 
-                    <Row style={{justifyContent: "center"}}>
-                    <LoginButton />
-                    </Row>}
+                    <></>
+                    }
+                    
             </div>
         )
     }

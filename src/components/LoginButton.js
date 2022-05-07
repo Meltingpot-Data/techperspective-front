@@ -5,9 +5,14 @@ import Button from 'react-bootstrap/Button';
 class LoginButton extends Component {
 
   render() {
-    console.log("class component login", this.props.auth0.isAuthenticated)
+    // console.log("class component login", this.props.auth0.isAuthenticated)
     return (
-      <Button style={{margin: "12rem", width: "12rem"}} variant="success" onClick={this.props.auth0.loginWithRedirect}>Log In</Button>
+
+      <Button style={{height: '3vw', width: '11vw', marginLeft: "1vw", marginRight:"1vw", fontSize: "1vw"}} variant="success" 
+      onClick={this.props.auth0.loginWithRedirect}>
+        Log In
+      </Button>
+
     )
   }
 }
