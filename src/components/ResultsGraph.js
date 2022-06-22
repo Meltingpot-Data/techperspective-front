@@ -10,7 +10,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -19,30 +18,33 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
 export const options = {
   responsive: true,
+  scales: {
+    y: {
+      ticks: {
+        callback: function(value) {if (value % 1 === 0) return value},
+      }
+    }
+  },
   plugins: {
     legend: {
-      position: 'top',
+      position: 'bottom',
     },
     title: {
       display: true,
-      text: 'Chart.js Bar Chart',
+      text: 'Number of People who took the survey',
+      position: 'left'
     },
   },
 };
-export default function ResultsGraph(props) {
 
-const labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"]
-if (!props.surveyToGraph){
+  export default function ResultsGraph(props) {
+
+    const labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"]
+  if (!props.surveyToGraph) {
   return null
 }
-
-console.log(props.surveyToGraph)
-
-
-
 
 const data = {
   labels,
@@ -55,9 +57,10 @@ const data = {
   ],
 };
 
-
-  return <Bar    data={data}
-  width={100}
+return <Bar
+  data={data}
+  width={150}
   height={50}
-  options={{ maintainAspectRatio: true }} />;
+  options={options}
+/>;
 }

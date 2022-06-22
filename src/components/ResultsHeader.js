@@ -8,7 +8,6 @@ class ResultsHeader extends Component {
             <>
             <div>
                 <h1>Survey Results</h1>
-
             </div>
             </>
         )

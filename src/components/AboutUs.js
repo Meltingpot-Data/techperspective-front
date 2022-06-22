@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import bios from './aboutUs.json';
 import BioCard from './BioCard'
-// import '../css/aboutUs.css';
 
 export default class AboutUs extends Component {
 
@@ -12,7 +11,7 @@ export default class AboutUs extends Component {
     return (
 
       <>
-        <h1 id="aboutTitle">We Are Melting-Pot Data</h1>
+        <h1 id="aboutTitle">We Are Team Red</h1>
         <Container fluid
           style={{
             display: 'flex',

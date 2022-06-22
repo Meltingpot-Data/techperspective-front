@@ -3,55 +3,46 @@ import { Link } from "react-router-dom";
 import { withAuth0 } from '@auth0/auth0-react'
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import LoginButton from './LoginButton'
+
+import { Navbar, Container, Nav } from 'react-bootstrap'
+import LogoutButton from "./LogOutButton";
 
 class Header extends Component {
-  handleLoginClick = () => {
-    console.log("Yay! You logged in");
-  };
-
-  handleLogOutClick = () => {
-    console.log("See ya! You logged out");
-  };
 
   render() {
     return (
-      <>  
-          <Row id="headerBackground" md={4} style={{justifyContent:"space-between"}}>
-          
-            <Col>
-          <Image
-            id="headerImage"
-            src="cf-logo-horizontal-2-color-white.png"
-          />
-          </Col>
-          
-          {this.props.auth0.isAuthenticated ? 
-       
-            <div  class="container">
-              <Col>
-              <Link class="headerButtonSurvey" to="/">
-                <Button style={{height: '3rem', width: '11rem', backgroundColor: "#ea4444", marginLeft: "1rem", marginRight: "1rem"}} variant="primary">Show Survey</Button>
-              </Link>
-              </Col>
-
-              <Col>
-              <br></br>
-              </Col>
-
-              <Col>
-              <Link type="button" class="headerButtonAdmin" to="/Admin">
-                <Button style={{height: '3rem', width: '11rem', marginLeft: "1rem"}} variant="light">Admin Panel</Button>
-              </Link>
-              </Col>
-              
-              <br></br>
-            </div>
-            
-           : <></>}
-        </Row>
-
+      <>
+          <Navbar style={{ padding: 0 }} id="headerBackground" expand="lg">
+              <Container style={{ paddingLeft: 0}} fluid>
+                  <a href="https://www.codefellows.org/" target="_blank ">
+                  <Image
+                      id="headerImage"
+                      src="cf-logo-horizontal-2-color-white.png"
+                  />
+                  </a>
+                      <Nav
+                          className="me-auto my-2 my-lg-0"
+                          style={{ maxHeight: '100px' }}
+                          navbarScroll
+                      >
+                      </Nav>
+                  {this.props.auth0.isAuthenticated ?
+                      <>
+                        <Link className="headerButtonSurvey" to="/about">
+                              <Button style={{backgroundColor: "#ea4444", marginLeft: "1rem"}} variant="primary">About Us</Button>
+                          </Link>
+                          <Link className="headerButtonSurvey" to="/admin">
+                              <Button style={{marginLeft: "1rem"}} variant="light">Admin Panel</Button>
+                          </Link>
+                          <Link className="headerButtonSurvey" to="/">
+                              <LogoutButton/>
+                          </Link>
+                      </>
+                      : <LoginButton/>
+                  }
+              </Container>
+          </Navbar>
       </>
     );
   }

@@ -1,39 +1,32 @@
 {
   "data": [
     {
-      "name": "Erik Savage",
-      "bio": "JavaScript developer with a background in the design and manufacturing of automotive and consumer electronic products, that has an affinity for solving complex problems, making data driven decisions, and building user-centric tools, apps, and websites.",
-      "img": "/imgs/you.jpg",
-      "linkedin": "https://www.linkedin.com/in/erikksavage/",
-      "github": "https://github.com/eriksavage"
+      "name": "Cody Davis",
+      "bio": "Hello there, my name is Cody, I go by Cody, so you can call me Cody. I am a software developer based in Oregon. I am a professional rubix cube doer by trade and am making a shift to something more challenging. I am also a father of two kids and I like extremely long walks in the woods. I really enjoy solving problems within code, and my goal is to become an average coder someday. In my spare time I like taking things apart, building computers, and taco bell.",
+      "img": "/assets/cody.png",
+      "linkedin": "https://www.linkedin.com/in/davis-r-cody/",
+      "github": "https://github.com/Cozhee"
     },
     {
-      "name": "Emily Landers",
-      "bio": "I have a dog.",
-      "img": "/imgs/you.jpeg",
-      "linkedin": "https://www.linkedin.com/in/emily-landers-9b672019b/",
-      "github": "https://github.com/Emily-Landers"
+      "name": "Dana Huffman",
+      "bio": "I’m 24 years old. I’ve spent the past few years working retail and decided it was time to move into the coding sector to study software development. My goal is to be able to work with coding and my digital art in the future.",
+      "img": "/assets/dana.jpg",
+      "linkedin": "https://www.linkedin.com/in/dana-huffman/",
+      "github": "https://github.com/dLeigh01"
     },
     {
-      "name": "Michael Metcalf",
-      "bio": "Hi, my name is Michael. I am coming into software development from the Army where I was for past 20 years. I enjoy the challenge of coding and am looking forward to a career as a software developer. I live in the Seattle area, Gig Harbor, with my wife and our dog. ",
-      "img": "/imgs/Metcalf_pic.jpeg",
-      "linkedin": "https://www.linkedin.com/in/mt-metcalf/",
-      "github": "https://github.com/Metty82"
+      "name": "Katharine Swilley",
+      "bio": "I worked in grants management for a state agency for a few years, as well as in the non-profit field and food service. After dabbling in some coding tutorials and workshops I found myself thinking about code when I would open an email or log in to a website. I want to understand how something I interact with everyday works.",
+      "img": "/assets/katharine.jpg",
+      "linkedin": "https://www.linkedin.com/in/kath-a-rine/",
+      "github": "https://github.com/kath-a-rine"
     },
     {
-      "name": "Ryan Lee",
-      "bio": "Aspiring software developer with a penchant for placeholder text, formerly in retail management. Fond of problem and puzzle solving, as well as building things that miraculously work. Work well in teams, and experience in retail has given me a lot of patience as well as communication proficiency.",
-      "img": "/imgs/lee.png",
-      "linkedin": "https://www.linkedin.com/in/ryanyinlee/",
-      "github": "https://github.com/ryanyinlee"
-    },
-    {
-      "name": "Joseph 'Joey' Hernandez",
-      "bio": "Hello there, my name is Joey, I go by Joey, so you can call me Joey. I am a budding software development engineer based in Seattle, WA. I am a professional brewer by trade and am making a shift to something more challenging. I am also a father to four kids, husband to one wife, and I like long walks in the woods. I really enjoy fixing problems in my code, and my goal is to become a great coder someday. In my spare time I like taking things apart, building computers, and tattoos, I love tattoos.",
-      "img": "/imgs/me.jpeg",
-      "linkedin": "https://www.linkedin.com/in/jmhernandez2six/",
-      "github": "https://github.com/JosephHernandez26"
+      "name": "Stanley Wilder",
+      "bio": "I'm 26 years old. I spent 6 years in the US navy as a fire controlman. I operated and performed routine corrective and preventative maintenance for missile defense systems on aircraft carriers.",
+      "img": "/assets/stanley.jpg",
+      "linkedin": "https://www.linkedin.com/in/stanley-wilder-b080b3233/",
+      "github": "https://github.com/stanwilder"
     }
   ]
 }

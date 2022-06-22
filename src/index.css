@@ -37,7 +37,7 @@ h1, h2 {
 }
 
 #headerImage {
-  background-color: rgba(0, 0, 0, 0.781);
+ 
   width:24rem;
   
   padding-left: 3rem;
@@ -53,5 +53,9 @@ h1, h2 {
 }
 
 #headerBackground {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgb(17,17,17)
+}
+
+h4 {
+  text-align: center;
 }

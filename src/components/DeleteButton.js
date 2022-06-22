@@ -8,7 +8,7 @@ export default class DeleteButton extends Component {
 
     render() {
         return (
-            <Button style={{ height: '3rem', width: '11rem' }} variant="danger" onClick={this.handleDeleteClick} >Delete</Button>
+            <Button variant="danger" onClick={this.handleDeleteClick} >Delete</Button>
         )
     }
 }

@@ -4,13 +4,14 @@ import ResultsGraph from './ResultsGraph';
 
 
 class Results extends Component {
-    
+
     render() {
         return (
-            <>  
+            <>
                 <ResultsHeader />
-                <div class="chart-container" style={{ margin: "auto", display: "flex", justifyContent:"center", position:"relative", height:"40vh", width:"80vw"}}> 
-                <ResultsGraph surveyToGraph={this.props.surveyToGraph} />
+                <div className="chart-container"
+                    style={{ margin: "auto", display: "flex", justifyContent: "center", position: "relative", height: "40vh", width: "80vw" }}>
+                    <ResultsGraph surveyToGraph={this.props.surveyToGraph} />
                 </div>
             </>
         )

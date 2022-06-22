@@ -3,8 +3,8 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 class ConfirmModal extends Component {
-    handleConfirm = () => {
-        this.props.putActiveSurvey();
+    handleConfirm = (survey) => {
+        this.props.putActiveSurvey(survey);
         this.props.closeModal();
         
     }
@@ -22,7 +22,7 @@ class ConfirmModal extends Component {
                         <Button variant="danger" onClick={this.props.closeModal}>
                             Cancel
                         </Button>
-                        <Button variant="success" onClick={this.handleConfirm}>
+                        <Button variant="success" onClick={() => {this.handleConfirm(this.props.selectedSurvey)}}>
                             Confirm
                         </Button>
                     </Modal.Footer>
