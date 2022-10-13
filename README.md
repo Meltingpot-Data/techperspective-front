@@ -2,21 +2,22 @@
 
 ## **Survey URL**
 
-[Tech Perspective Survey](https://tech-perspective-survey.netlify.app/admin)
+[Tech Perspective Survey](https://tech-perspectives-survey.netlify.app/222438014288051)
 
 ## **The vision**
 
 ![Survey](./public/assets/survey.png)
 
-- The vision compiling diversity data and using it as a teaching tool to bring to light internal biases and ways to be more conscious with regard to inclusivity and diversity .
+- The vision compiling diversity data and using it as a teaching tool to bring to light internal biases and ways to be more conscious with regard to inclusiveness and diversity.
+- We wanted to take this survey beyond the former version and build in historical data of all classes into the future. This added feature will allow facilitators and administrators to evaluate the data of past classes and cohorts providing Code Fellows staff the ability to accurately assess the DEI atmosphere.
 
 ## **The Problem Domain**
 
-- This project will revolutionize the existing survey data, making it more user friendly and potentially caching historical data.
+- This project will revolutionize the existing survey data, making it more user friendly and offering the opportunity to cache historical DEI data from all students past and present.
 
 ## **The Importance**
 
-- This product will drastically improve the awareness of internalized biases, discrimination and privilege based on a multitude of factors. This product will serve to bring about a more inclusive and self-aware team.
+- This product will drastically improve the awareness of internalized biases, discrimination and privilege based on a multitude of factors inspiring a more inclusive and self-aware team and learning environment for all students.
 
 ### **The Project Scope (In/Out)**
 
